@@ -4,6 +4,7 @@ export interface Event {
     description: string;
     date:Date;
     location:string;
+    city:string;
     duration:string;
   }
   

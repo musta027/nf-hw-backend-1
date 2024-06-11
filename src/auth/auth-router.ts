@@ -14,6 +14,7 @@ authRouter.post('/refresh-token', authController.refreshToken);
 
 // Example protected route
 authRouter.get('/protected', authMiddleware, (req, res) => {
+  console.log(req.user);
   res.json({ message: 'You have access to this route!' });
 });
 
